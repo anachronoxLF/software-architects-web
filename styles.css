@@ -28,6 +28,9 @@ html { -webkit-text-size-adjust: 100%; }
 
 html, body { margin: 0; padding: 0; }
 
+html { overflow-x: hidden; }
+body { overflow-x: clip; }
+
 body {
   background: var(--bg);
   color: var(--fg);
@@ -112,8 +115,9 @@ address { font-style: normal; }
 }
 
 .section-heading {
-  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  font-size: clamp(1.6rem, 5.5vw, 2.6rem);
   margin: 0 0 1.75rem;
+  text-wrap: balance;
 }
 
 .eyebrow {
@@ -270,10 +274,15 @@ address { font-style: normal; }
 .hero__inner { text-align: left; }
 
 .hero__heading {
-  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-size: clamp(2rem, 7.5vw, 4.25rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin: 0 0 1.5rem;
+  text-wrap: balance;
+}
+.hero__heading br { display: none; }
+@media (min-width: 720px) {
+  .hero__heading br { display: inline; }
 }
 
 .hero__lede {
@@ -324,8 +333,9 @@ address { font-style: normal; }
 }
 
 .pillar__title {
-  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
   margin: 0 0 0.75rem;
+  text-wrap: balance;
 }
 
 .pillar__body {
