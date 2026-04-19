@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#F2EBD8"/>
+  <text x="32" y="44" text-anchor="middle"
+        font-family="'Source Serif 4', Georgia, 'Times New Roman', serif"
+        font-weight="600" font-size="32" fill="#10243A"
+        letter-spacing="-1">SA</text>
+</svg>
